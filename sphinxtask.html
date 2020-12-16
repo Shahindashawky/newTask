@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="css\bootstrap.min.css" rel="stylesheet">
+  <link href="css\sphinxtask.css" rel="stylesheet">
+
+
+
+  <title>Educational RC</title>
+</head>
+
+<body>
+  <div class="loading">
+    <div class="preloader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="container">
+    <div class="main">
+      <header class="header1">
+        <div class="row container1">
+          <div class="head">
+            <h2>What’s in the basket? Choose and write.</h2>
+          </div>
+          <div id="myBtn1">
+            <img src="assets\img\resourse_icon.png" class="img2">
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="cls"><img src="assets\img\close_icon.png"></span>
+              <img src="assets\img\dummy.jpg" class="img6">
+            </div>
+          </div>
+          <div id="myBtn2">
+            <img src="assets\img\help_icon.png" class="img">
+          </div>
+          <div id="myModal2" class="modal">
+            <div class="modal-content">
+              <span class="cls2"><img src="assets\img\close_icon.png"></span>
+              <p>Help content goes here.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container2 ">
+        <div class="container3">
+        </div>
+        <div class="container4">
+          <img src="assets\img\p15e11.png" class="img3">
+
+          <div class="Container5">
+            <div class="Container6 " style="text-align: center;">
+              <div class="row justify-content-center">
+                <button class="btn"><span class="choices" id="ch1" onclick="selected(this)"
+                    value="scissors">scissors</span></button>
+                <button class="btn"><span class="choices" id="ch2" onclick="selected(this)"
+                    value="eraser">eraser</span></button>
+                <button class="btn"><span class="choices" id="ch3" onclick="selected(this)"
+                    value="ruler">ruler</span></button>
+                <button class="btn btn1"><span class="choices" id="ch4" onclick="selected(this)"
+                    value="bag">bag</span><br></button>
+              </div>
+              <button class="btn btn2"><span class="choices" id="ch5" onclick="selected(this)"
+                  value="pencil case">pencil case</span></button>
+              <button class="btn"><span class="choices" id="ch6" onclick="selected(this)"
+                  value="pencil">pencil</span></button>
+              <button class="btn"><span class="choices" id="ch7" onclick="selected(this)"
+                  value="book">book</span></button>
+              <button class="btn"><span class="choices" id="ch8" onclick="selected(this)"
+                  value="pen">pen</span></button>
+            </div>
+          </div>
+          <div class="oContainer">
+
+            <div class="option_1" id="op1" onclick="addItem(this)"></div>
+            <div class="option_2" id="op2" onclick="addItem(this)"></div>
+            <div class="option_3" id="op3" onclick="addItem(this)"></div>
+            <div class="option_4" id="op4" onclick="addItem(this)"></div>
+            <div class="option_5" id="op5" onclick="addItem(this)"></div>
+
+          </div>
+        </div>
+        <img src="assets\img\replay_icon.png" onclick="reset()" class="img4">
+        <button class="img5" id="Button" onclick="this.disabled = true"><img src="assets\img\showAns_icon.png"
+            onclick="eye()"></button>
+      </div>
+    </div>
+  </div>
+  <script src="js\jquery.js"></script>
+  <script src="js\bootstrap.min.js"></script>
+  <script src="js\sphinxtask.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
